@@ -7,18 +7,22 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles/favorite-style.css">
 </head>
+
 <body>
   <button onClick="alert('pop pop')" class="btn btn-info m-3">click click</button>
+  
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Laniya's App <i class="bi bi-hearts"></i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-hearts"></i>Laniya's App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item fluid">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <li class="nav-item"></li>
           <a class="nav-link" href="#favorite-animal">Favorite Animal</a>
         </li>
         <li class="nav-item">
@@ -50,8 +54,12 @@
 
     <main>
       <div class="mb-2">
-        <button id="btnElephants" class="btn btn-outline-secondary">Elephants</button>
-        <button id="btnBerleezy" class="btn btn-outline-secondary">Berleezy</button>
+        <a href="https://www.youtube.com/@berleezy" 
+        class="btn btn-outline-secondary" 
+        role="button">
+        Berleezy</a>
+        <a href="https://df0179xsabjj8.cloudfront.net/huge/433799_O2yQVGC3fqUETRHY_535667.jpg" class="btn btn-outline-secondary active" role="button" aria-pressed="true">Elephants</a>
+        
       </div>
       <section id="favorite-animal">
         <h2 class="section-title">Favorite Animal</h2>
@@ -89,7 +97,7 @@
 
     <footer>
       <p>Visit my <a href="https://github.com/lmsith55" target="_blank">GitHub profile</a>.</p>
-      <a href="readme.markdown" target="readme">readme</a>
+      <!--<a href="readme.md" target="readme">readme</a> -->
     </footer>
 
   <script>
